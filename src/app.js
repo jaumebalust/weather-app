@@ -2,6 +2,7 @@ const express = require('express')
 const weather = require('./utils/weather')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 app.get('',(req,res) => {
     res.send('Hello express!')
@@ -26,6 +27,6 @@ app.get('/about',(req,res) => {
     res.send('<h1>About page.</h1>')
 })
 
-app.listen(3000 , () => {
-    console.log('Server is up on port 3000.')
+app.listen(port , () => {
+    console.log('Server is up on port '+port)
 })
