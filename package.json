@@ -5,6 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "db": "mongod --dbpath=/Users/jimmy/mongodb-data",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
